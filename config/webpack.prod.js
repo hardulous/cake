@@ -12,7 +12,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
-    publicPath: "https://demo-cake.netlify.app/",
+    publicPath: "http://cake-microfrontend.apps.ocp4.pacosta.com/",
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
@@ -25,7 +25,8 @@ const prodConfig = {
         "./cakeApp": "./src/bootstrap.js",
       },
       remotes: {
-        container: "container@https://demo-con.netlify.app/remoteEntry.js",
+        container:
+          "container@http://container-microfrontend.apps.ocp4.pacosta.com/remoteEntry.js",
       },
       shared: {
         ...deps,
