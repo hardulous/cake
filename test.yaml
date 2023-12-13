@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: cake
-          image: 'registry.ocp4.pacosta.com:8443/microfrontend/cake:2'
+          image: 'registry.ocp4.pacosta.com:8443/microfrontend/cake:3'
           ports:
             - containerPort: 3001
               protocol: TCP
